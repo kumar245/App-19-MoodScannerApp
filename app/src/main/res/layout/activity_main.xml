@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/image_bg"
+    tools:context="com.kumar.user.app_19_moodscannerapp.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:textColor="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/mood_scanner"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:textColor="#FFFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="@string/press_and_hold_to_reveal_your_mood"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        app:srcCompat="@drawable/finger_bg"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/thumbPrint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/thumb_finger_prints"
+        android:layout_alignTop="@+id/imageView"
+        android:layout_alignLeft="@+id/imageView"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:layout_above="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_mood"
+        android:textColor="#FFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
